@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .demo1{
+         background: red;
+         display: none;
+         display: inline;
+      }
+      span{
+         display: block;
+      }
+      .container div{
+         background: orange;
+         padding: 40px;
+         /* margin: 3px auto; */
+         width: 200px;
+      }
+      .container{
+         display: flex;
+         gap: 20px;
+         justify-content:flex-start ;
+         justify-content:flex-end ;
+         justify-content:space-around ;
+         justify-content:space-between ;
+         
+         flex-direction:row ;
+         flex-direction:column ;
+         flex-direction:column-reverse ;
+         flex-direction:row-reverse ;
+      }
+      .def{
+         background-color: orangered;
+         padding: 42px;
+         position: static;
+      }
+      .ps1{
+         position: absolute;
+         background: yellow;
+         top: 70px;
+         right: 50px;
+         z-index:1 ;
+      }
+      .ps2{
+         background: blueviolet;
+         position: fixed;
+         top: 40px;
+      }
+      .ps3{
+         position: relative;
+         background-color: black;
+         top: 30px;
+      }
+      .ps4{
+         position: sticky;
+         background: yellowgreen;
+         top: 100px;
+      }
+      header{
+         position: sticky;
+         top:0
+      }
+   </style>
+</head>
+<body>
+   <header>
+      header 
+   </header>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def ps1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def ps4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def ps2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def ps3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+<div class="def">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias assumenda commodi quam.</div>
+
+
+   <!-- display -->
+   <!-- block and inline element -->
+   <!-- Block element : An element dat starts on a new line  -->
+    <p class="demo1">Lorem, ipsum dolor.</p>
+    <div class="demo1">Lorem, ipsum.</div>
+  
+    <span> Lorem, ipsum.</span>
+    <span> Lorem, ipsum.</span>
+
+    <div class="container">
+      <div> Box 1 </div>
+      <div> Box 2</div>
+      <div> Box 3</div>
+    </div>
+
+    <!-- position -->
+
+   
+</body>
+</html>
