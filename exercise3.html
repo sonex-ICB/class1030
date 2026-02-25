@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,363 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-image: url(hero-bg.jpg);
-            background-position: top;
-            background-size: c;
-        }
-
-        .logo {
-            font-family: cursive;
-            font-size: 2.6rem;
-            color: aliceblue;
-            font-weight: 400;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 38px;
-        }
-
-        nav a {
-            color: antiquewhite;
-            text-decoration: none;
-            font-size: 16.8px;
-            font-weight: 500;
-
-            &:hover {
-                color: orangered;
-            }
-        }
-
-        .headericons {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-            color: white;
-
-            &:hover {
-                color: orangered;
-            }
-        }
-
-        button {
-            background: rgb(255, 170, 11);
-            color: antiquewhite;
-            padding: 10px 26px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            border: 0;
-        }
-
-        button {
-            &:hover {
-                background: orangered;
-            }
-        }
-
-        .content h2 {
-            font-size: 49px;
-            margin-bottom: 22.4px;
-            font-family: cursive;
-            font-weight: 700;
-        }
-
-        .content p {
-            font-size: 18.88px;
-            margin-bottom: 40px;
-            max-width: 520px;
-        }
-
-        .content {
-            color: #fff;
-            height: 100vh;
-        }
-
-        .image {
-            position: absolute;
-            width: 100%;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        .box {
-            width: 100%;
-            background: #001;
-            padding: 12px;
-            border-radius: 6px;
-            color: #fff;
-            display: flex;
-            gap: 30px;
-        }
-
-        .box-img {
-            border: 4px solid orange;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .box-img img {
-            width: 100%;
-            transition: .3s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        h2 {
-            font-family: cursive;
-            font-size: 20px;
-            margin: 0 0 4px 0;
-            letter-spacing: -0.5px;
-        }
-
-        .box span {
-            font-size: 33.6px;
-            margin: 0 0 8px 0;
-            font-family: cursive;
-        }
-
-        .discount {
-            display: flex;
-            gap: 30px;
-            max-width: 1024px;
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .menu .card {
-            background: #001;
-            color: #fff;
-            overflow: hidden;
-            border-radius: 8px;
-            max-width: 290px;
-            width: 90%;
-        }
-
-        .menu .top {
-            border-radius: 0 0 0 30px;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: aliceblue;
-        }
-
-        .menu .bottom {
-            padding: 30px;
-        }
-
-        .menu .action {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .menucontainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin: 30px auto;
-            max-width: 1024px;
-            width: 90%;
-            justify-content: center;
-
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            max-width: 1024px;
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .about-content div {
-            width: 100%;
-        }
-
-        .about {
-            background-color: #001;
-            color: #fff;
-            padding: 50px 0;
-        }
-
-        .cart {
-            width: 10px;
-            height: 10px;
-            background: rgb(255, 170, 11);
-            border-radius: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: white;
-        }
-
-        .cart2 {
-            width: 10px;
-            height: 10px;
-            background: rgb(255, 170, 11);
-            border-radius: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: white;
-        }
-
-        .cart3 {
-            width: 10px;
-            height: 10px;
-            background: rgb(255, 170, 11);
-            border-radius: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: white;
-        }
-
-        .cart4 {
-            width: 10px;
-            height: 10px;
-            background: rgb(255, 170, 11);
-            border-radius: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: white;
-        }
-
-        .top img {
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .menu {
-            text-align: center;
-            margin: 89px;
-        }
-
-        h3 {
-            font-family: cursive;
-            font-size: 50px;
-            font-weight: 1;
-        }
-
-        .menu-nav {
-            margin: 40px;
-            justify-content: space-between;
-        }
-
-        .menu1 {
-            text-decoration: none;
-            font-family: cursive;
-        }
-
-        .menu2 {
-            text-decoration: none;
-            font-family: cursive;
-        }
-
-        .menu3 {
-            text-decoration: none;
-            font-family: cursive;
-        }
-
-        .menu4 {
-            text-decoration: none;
-            font-family: cursive;
-        }
-
-        /*  */
-        .book_table form input {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            border: .6px solid #808088;
-            border-radius: 5px;
-            margin: 25px auto;
-            outline: 0;
-        }
-
-        .book_table {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            max-width: 1024px;
-            width: 90%;
-            margin: 40px auto;
-        }
-
-        .book_table form,
-        .book_table iframe {
-            width: 100%;
-        }
-
-        .testimony .card .top {
-            background: #001;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        .testimony .content {
-            display: flex;
-            gap: 30px;
-            max-width: 1024px;
-            margin: 30px auto;
-        }
-
-        .testimony img {
-            border-radius: 50%;
-            border: 5px solid orange;
-            margin: 30px 0;
-        }
-        footer .col{
-            display: flex;
-            flex-direction: column;
-        }
-        footer{
-            background-color: #001;
-        }
-    </style>
+        <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <div class="logo"> Feane</div>
@@ -428,10 +74,10 @@
     <section class="menu">
         <h3>Our Menu</h3>
         <div class="menu-nav">
-            <a href="" class="menu1">All</a>
-            <a href="" class="menu2">Pizza</a>
-            <a href="" class="menu3">Fries </a>
-            <a href="" class="menu4">Pasta</a>
+            <a href="" class="menu">All</a>
+            <a href="" class="">Pizza</a>
+            <a href="" class="">Fries </a>
+            <a href="" class="">Pasta</a>
         </div>
         <div class="menucontainer">
             <div class="card">
@@ -443,7 +89,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores vitae perferendis!</p>
                     <div class="action">
                         <span> $20</span>
-                        <a href="" class="cart2"><i class="ri-shopping-cart-line"></i></a>
+                        <a href="" class="cart"><i class="ri-shopping-cart-line"></i></a>
                     </div>
                 </div>
             </div>
@@ -456,7 +102,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores vitae perferendis!</p>
                     <div class="action">
                         <span> $15</span>
-                        <a href="" class="cart3"><i class="ri-shopping-cart-line"></i></a>
+                        <a href="" class="cart"><i class="ri-shopping-cart-line"></i></a>
                     </div>
                 </div>
             </div>
@@ -482,92 +128,80 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores vitae perferendis!</p>
                     <div class="action">
                         <span> $18</span>
-                        <a href="" class="cart4"><i class="ri-shopping-cart-line"></i></a>
+                        <a href="" class="cart"><i class="ri-shopping-cart-line"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="about">
-        <!-- 15 mins -->
-        <div class="about-content">
-            <div> <img src="https://themewagon.github.io/feane/images/about-img.png" width="100%" alt=""> </div>
-            <div>
-                <div class="title"> We are Feane</div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor corporis nulla accusantium
-                    facilis fuga fugiat et. Ipsa, corporis quam.</p>
+    <!-- testimony -->
+     <section class="testimony">
+        <div class="title"><b>Says our Customers</b></div>
+        <div class="content">
+            <div class="card">
+                <div class="top">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque quos! Amet dolorem deserunt explicabo consectetur excepturi quos doloremque eaque.</p>
+                    <div><b>solomon - FCT</b></div>
+                </div>
+                <div class="bottom">
+                    <img width="100" src="client1.jpg" alt="">
+                </div>
             </div>
         </div>
+     </section>
+    <section class="about">
+            <!-- 15 mins -->
+             <div class="about-content">
+                 <div> <img src="https://themewagon.github.io/feane/images/about-img.png" width="100%" alt=""> </div>
+                 <div>
+                    <div class="title"> We are Feane</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolor corporis nulla accusantium facilis fuga fugiat et. Ipsa, corporis quam.</p>
+                 </div>
+             </div>
     </section>
-    <section class="book_table">
+      <section class="book_table">
         <form action="">
+            <h2 class="header2">Book A Table</h2>
             <input type="text" placeholder="Your Name">
             <input type="text" placeholder="Mobile Number">
             <input type="email" placeholder="Your Email">
             <input type="number" placeholder="Number of Persons">
             <input type="date" placeholder="Date">
-            <button> Boo Now</button>
+            <button>Boo Now</button>
         </form>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31520.517892697164!2d7.4922416!3d9.0578599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1771407665885!5m2!1sen!2sng"
-            height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <!-- testimony -->
-    <section class="testimony">
-        <div class="title"> <b> Says our Customers</b> </div>
-        <div class="content">
-            <div class="card">
-                <div class="top">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus suscipit, corporis, esse
-                        adipisci neque fuga natus rerum unde impedit non voluptates! Consequatur.</p>
-                    <div><b>Solomon - FCT</b></div>
-                </div>
-                <div class="bottom">
-                    <img width="100" src="https://themewagon.github.io/feane/images/client2.jpg" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus suscipit, corporis, esse
-                        adipisci neque fuga natus rerum unde impedit non voluptates! Consequatur.</p>
-                    <div><b>Solomon - FCT</b></div>
-                </div>
-                <div class="bottom">
-                    <img width="100" src="https://themewagon.github.io/feane/images/client2.jpg" alt="">
-                </div>
-            </div>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15763.71792767655!2d7.447903237860452!3d8.978636602195985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1771407685908!5m2!1sen!2sng" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
-        <div class="content">
+        <div class="tentcon">
             <div class="col">
                 <b>Contact Us</b>
-                <a href=""> Millunium Plaza, NNPC Towers </a>
-                <a href="tel:+2349088"> Call +2349088</a>
+                <a href="">Milliuniumm plaza, NNPC Towers</a>
+                <a href="tel:+2349088">Call +2349088</a>
                 <a href="mailto:me@you.com"> mail@you.com</a>
             </div>
             <div class="col">
-                <b>Contact Us</b>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quis quae consequatur debitis nihil. Harum adipisci magni autem et. Praesentium, quaerat at!</p>
-                <div>
-                    <a href="">F</a>
-                    <a href="">I</a>
-                    <a href="">L</a>
-                    <a href="">I</a>
-                    <a href="">P</a>
+                <b class="">Contact Us</b>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, distinctio? Necessitatibus odit adipisci labore ratione ab libero sit doloribus neque.</p>
+                <div class="col_link">
+                    <a href=""><i class="ri-facebook-circle-fill"></i></a>
+                    <a href=""><i class="ri-twitter-x-line"></i></a>
+                    <a href=""><i class="ri-functions"></i></a>
+                    <a href=""><i class="ri-instagram-line"></i></a>
+                    <a href=""><i class="ri-threads-line"></i></a>
                 </div>
             </div>
             <div class="col">
                 <b>Openi Xours</b>
                 <p>10:00 AM - 10:00 PM</p>
 
+
             </div>
+        </div>
+        <div class="last_part">
+            <p> <i class="ri-copyright-line"></i>2026 All Rights Reserved By Free Html Templates </p>
+            <p2> <i class="ri-copyright-line"></i>Distributed By ThemeWagon</p>
         </div>
     </footer>
 </body>
-
 </html>
 <!-- https://themewagon.github.io/feane/index.html -->

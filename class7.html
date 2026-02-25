@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header{
+         background: #009;
+         color: #fff;
+         padding: 20px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         font-size: 13px;
+      }
+      header nav{
+         display: none;
+         flex-direction: column;
+         background: #001;
+         position: absolute;
+         width: 80%;
+         left:0;
+         top:0px;
+         height: 100%;
+         padding: 20px;
+         
+      }
+      header a{
+         text-decoration: none;
+         color: #fff;
+         padding: 6px;
+         font-size: 13px;
+      }
+      .div1 {
+         padding: 30px;
+         width: 200px;
+         background: red;
+         animation: blue 10s;
+      }
+
+      @keyframes blue {
+         0% {
+            background: purple;
+            border-radius: 0;
+         }
+
+         33% {
+            background: red;
+         }
+
+         66% {
+            background: black;
+         }
+
+         100% {
+            background: yellow;
+            border-radius: 50%;
+         }
+      }
+
+      .demo {
+         padding: 12;
+         background: blue;
+      }
+
+      .div {
+         height: 100px;
+         width: 100px;
+
+         width: 20px;
+         height: 20px;
+         /* border: 4px dotted orange;        */
+         border: 4px solid rgba(13, 0, 255, 0.083);
+         border-top-color: blue;
+         border-radius: 50%;
+         animation: red 0.9s infinite linear;
+      }
+
+      @keyframes red {
+         0% {
+            transform: rotate(0deg);
+         }
+
+         100% {
+            transform: rotate(360deg);
+         }
+      }
+
+      /*  */
+
+      .loader_container {
+         margin: 30px auto;
+         width: 80%;
+         background-color: rgba(13, 0, 255, 0.083);
+         ;
+         border-radius: 50px;
+         overflow: hidden;
+      }
+
+      .loader {
+         background: blue;
+         width: 100%;
+         padding: 4px;
+         animation: animation_1 5s linear;
+      }
+
+      /*  */
+      @keyframes animation_1 {
+         0% {
+            width: 0;
+         }
+
+         100% {
+            width: 100%;
+         }
+
+      }
+
+      .test1 {
+         background: orange;
+         padding: 20px;
+      }
+
+      .test2{
+         background-color: red;
+         padding: 30px;
+         width: 90%;
+         max-width: 700px;
+         margin: 30px auto;
+         font-size: 28px;
+      }
+
+      @media screen and (min-width:450px) {
+         .test1 {
+            background: blue;
+            color: bisque;
+         }
+          header nav{
+         display: flex;
+         position: static;
+         width: fit-content;
+         flex-direction: row;
+         background: transparent;
+      }
+       header button{
+         display: none;
+      }
+       header {
+         padding: 20px 50px;
+         font-size: 22px;
+      }
+         
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h3> Pinacle Real Estates Services </h3>
+      <nav>
+         <a href=""> Link 1</a>
+         <a href=""> Link 2</a>
+         <a href=""> Link 3</a>
+      </nav>
+      <button class="" type="button"> Menu </button>
+   </header>
+   <!-- animations -->
+   <div class="div1"></div>
+   <marquee class="demo" behavior="" direction=""> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+      exercitationem commodi molestiae quidem nemo quis nam, distinctio, illo magni error sint perferendis.</marquee>
+   <div class="div"></div>
+
+   <div class="loader_container">
+      <div class="loader"></div>
+   </div>
+   <!-- RWD : Responsive Web Desi'n -->
+
+   <div class="test1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quasi natus laborum?</div>
+   <div class="test2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, sequi.</div>
+
+
+</body>
+
+</html>
