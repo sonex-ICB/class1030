@@ -1,0 +1,32 @@
+const products = [
+  {
+    id: "P001",
+    name: "Laptop",
+    qty: 10,
+    price: 850.00
+  },
+  {
+    id: "P002",
+    name: "Wireless Mouse",
+    qty: 25,
+    price: 15.50
+  },
+  {
+    id: "P003",
+    name: "Keyboard",
+    qty: 18,
+    price: 22.00
+  },
+  {
+    id: "P004",
+    name: "Monitor",
+    qty: 12,
+    price: 180.00
+  },
+  {
+    id: "P005",
+    name: "USB Flash Drive",
+    qty: 40,
+    price: 8.99
+  }
+];
